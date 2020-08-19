@@ -17,7 +17,7 @@ RUN apk add --update --no-cache \
 #Get latest version #
 #####################
 RUN git clone https://git.savannah.gnu.org/git/chktex.git \
-    && cd chktex/chktex
+    && cd chktex/chktex \
     && sh autogen.sh --prefix=/usr/bin \
     && ./configure \
     && make \
